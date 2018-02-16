@@ -1,3 +1,4 @@
+
 IQR <- IQR(phoneRecords$TOT_MINUTES_USAGE)
 
 outliers <- sum(length(which(phoneRecords$TOT_MINUTES_USAGE >  (Q1 + (IQR*1.5))  ))) + sum(length(which(phoneRecords$TOT_MINUTES_USAGE <  (Q2  - ( IQR *1.5))   )))
